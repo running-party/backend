@@ -1,11 +1,16 @@
 # backend
 
+<br>
+
 ## Code Convention
-- [Google code formatter](https://github.com/google/styleguide)
+- [Google Code Formatter](https://github.com/google/styleguide)
+- [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+
+<br>
 
 ## Github Rules
 
-### Git commit message rule
+- ### Git commit message rule
 
 | 작업 타입 | 작업내용 |
 | --- | --- |
