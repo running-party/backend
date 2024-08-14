@@ -19,8 +19,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "running_record")
-public class RunningRecord extends Timestamped {
+@Table(name = "records")
+public class Record extends Timestamped {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
