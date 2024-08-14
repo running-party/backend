@@ -25,8 +25,9 @@ public class RunningRecord extends Timestamped {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @Column(name = "user_id")
-  private String loginId;
+  @ManyToOne
+  @JoinColumn(name = "user_id")
+  private User user;
 
   @Column(name = "distance")
   private String distance;
