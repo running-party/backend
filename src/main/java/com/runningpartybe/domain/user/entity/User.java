@@ -1,5 +1,6 @@
 package com.runningpartybe.domain.user.entity;
 
+import com.runningpartybe.global.entity.Timestamped;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -17,7 +18,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 @Table(name = "member")
-public class User {
+public class User extends Timestamped {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
