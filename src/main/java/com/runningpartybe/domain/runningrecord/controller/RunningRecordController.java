@@ -1,6 +1,6 @@
-package com.runningpartybe.domain.record.controller;
+package com.runningpartybe.domain.runningrecord.controller;
 
-import com.runningpartybe.domain.record.service.RecordService;
+import com.runningpartybe.domain.runningrecord.service.RunningRecordService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/v1/record")
-public class RecordController {
+public class RunningRecordController {
 
-  private final RecordService recordService;
+  private final RunningRecordService runningRecordService;
 
 }
