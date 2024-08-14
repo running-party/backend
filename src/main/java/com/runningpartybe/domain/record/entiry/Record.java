@@ -1,4 +1,4 @@
-package com.runningpartybe.domain.runningrecord.entiry;
+package com.runningpartybe.domain.record.entiry;
 
 import com.runningpartybe.domain.user.entity.User;
 import com.runningpartybe.global.entity.Timestamped;

@@ -1,6 +1,6 @@
-package com.runningpartybe.domain.runningrecord.service;
+package com.runningpartybe.domain.record.service;
 
-import com.runningpartybe.domain.runningrecord.repository.RecordRepository;
+import com.runningpartybe.domain.record.repository.RecordRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
