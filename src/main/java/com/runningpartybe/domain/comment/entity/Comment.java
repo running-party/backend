@@ -2,6 +2,7 @@ package com.runningpartybe.domain.comment.entity;
 
 import com.runningpartybe.domain.runningrecord.entiry.RunningRecord;
 import com.runningpartybe.domain.user.entity.User;
+import com.runningpartybe.global.entity.Timestamped;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -21,7 +22,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 @Table(name = "comment")
-public class Comment {
+public class Comment extends Timestamped {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
