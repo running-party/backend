@@ -1,4 +1,4 @@
-package com.runningpartybe.user.entity;
+package com.runningpartybe.domain.user.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

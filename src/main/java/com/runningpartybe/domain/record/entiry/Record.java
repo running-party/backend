@@ -1,4 +1,4 @@
-package com.runningpartybe.record.entiry;
+package com.runningpartybe.domain.record.entiry;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

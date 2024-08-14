@@ -1,4 +1,4 @@
-package com.runningpartybe.board;
+package com.runningpartybe.domain.board;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;

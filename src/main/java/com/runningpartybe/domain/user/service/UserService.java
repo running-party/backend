@@ -1,4 +1,4 @@
-package com.runningpartybe.user.service;
+package com.runningpartybe.domain.user.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
-package com.runningpartybe.user.controller;
+package com.runningpartybe.domain.user.controller;
 
-import com.runningpartybe.user.service.UserService;
+import com.runningpartybe.domain.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
