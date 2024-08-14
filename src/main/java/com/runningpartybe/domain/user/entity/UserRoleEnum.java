@@ -1,4 +1,4 @@
-package com.runningpartybe.user.entity;
+package com.runningpartybe.domain.user.entity;
 
 public enum UserRoleEnum {
 
