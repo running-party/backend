@@ -1,5 +1,6 @@
-package com.runningpartybe.domain.board;
+package com.runningpartybe.domain.board.controller;
 
+import com.runningpartybe.domain.board.service.BoardService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,10 +16,10 @@ import java.util.List;
 public class BoardController {
 
   @GetMapping("/boards")
-  public ResponseEntity<List<Board>> getBoards() {
-    List<Board> boards = new ArrayList<>();
-    boards.add(new Board(1, "First Board", "Running Party!"));
-    boards.add(new Board(2, "Second Board", "keep going!"));
+  public ResponseEntity<List<BoardService>> getBoards() {
+    List<BoardService> boards = new ArrayList<>();
+    boards.add(new BoardService(1, "First Board", "Running Party!"));
+    boards.add(new BoardService(2, "Second Board", "keep going!"));
     return ResponseEntity.ok(boards);
   }
 }
