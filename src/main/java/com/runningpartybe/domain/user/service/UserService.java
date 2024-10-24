@@ -1,10 +1,10 @@
 package com.runningpartybe.domain.user.service;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
+import com.runningpartybe.dto.UserDto;
 
-@Service
-@RequiredArgsConstructor
-public class UserService {
+public interface UserService {
+
+  // 회원가입
+  void signUp(UserDto userDto);
 
 }
