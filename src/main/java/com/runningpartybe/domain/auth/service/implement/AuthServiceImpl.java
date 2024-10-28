@@ -1,6 +1,7 @@
 package com.runningpartybe.domain.auth.service.implement;
 
 import com.runningpartybe.domain.auth.service.AuthService;
+import com.runningpartybe.domain.user.entity.User;
 import com.runningpartybe.domain.user.repository.UserRepository;
 import com.runningpartybe.dto.auth.request.AuthRequestDto;
 import com.runningpartybe.dto.auth.response.AuthResponseDto;
@@ -32,12 +33,12 @@ public class AuthServiceImpl implements AuthService {
 
     // 응답 생성
     return AuthResponseDto.builder()
-            .token(token)
+            //.token(token)
             .id(user.getId())
             .loginId(user.getLoginId())
             .nickname(user.getNickname())
             .email(user.getEmail())
-            .role(user.getRole())
+            //.role(user.getRole())
             .image(user.getImage())
             .build();
   }
