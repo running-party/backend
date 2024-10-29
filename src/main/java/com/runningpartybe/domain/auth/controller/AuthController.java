@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/v1/auth")
+@RequestMapping("/v1/auth")
 @RequiredArgsConstructor
 public class AuthController {
 
@@ -20,7 +20,9 @@ public class AuthController {
   public ResponseEntity<AuthResponseDto> login(@RequestBody AuthRequestDto authRequestDto) {
     // 로그인 ID와 비밀번호가 있는 경우 일반 로그인으로 처리
     if (authRequestDto.getLoginId() != null && authRequestDto.getPassword() != null) {
+      System.out.println("=============================");
       AuthResponseDto response = authService.login(authRequestDto);
+      System.out.println("=============================");
       return ResponseEntity.ok(response);
     }
 

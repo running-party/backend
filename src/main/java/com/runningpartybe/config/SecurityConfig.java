@@ -14,9 +14,8 @@ public class SecurityConfig {
   public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
     http
             .csrf(csrf -> csrf.disable())
-            // 새로운 방식으로 CSRF 비활성화
             .authorizeHttpRequests(authz -> authz
-                            .requestMatchers("/v1/user/login", "/v1/user/signup").permitAll()
+                            .requestMatchers("/v1/auth/login", "/v1/user/signup").permitAll()
                     // 인증 없이 접근 가능하도록 설정
                     .anyRequest().authenticated()
                     // 나머지 요청은 인증 요구
