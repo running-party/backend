@@ -5,9 +5,16 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User, Long> {
-  // 추가적인 메서드 작성 (Optional: 예시로 사용자 ID로 조회하는 메서드)
+
+  // 로그인 ID로 사용자 찾기
   Optional<User> findByLoginId(String loginId);
 
-  // 추가적으로 이메일로 찾는 메서드
+  // 이메일로 사용자 찾기
   Optional<User> findByEmail(String email);
+
+  // 이메일 중복 여부 확인
+  boolean existsByEmail(String email);
+
+  // 로그인 ID 중복 여부 확인
+  boolean existsByLoginId(String loginId);
 }

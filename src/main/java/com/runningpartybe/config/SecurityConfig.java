@@ -1,4 +1,4 @@
-package com.runningpartybe.config;
+package com.runningpartybe.global.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

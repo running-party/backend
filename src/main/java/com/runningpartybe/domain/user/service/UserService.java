@@ -7,4 +7,5 @@ public interface UserService {
   // 회원가입
   void signUp(UserDto userDto);
 
+  UserDto getUserInfo(Long userId);
 }

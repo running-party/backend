@@ -21,8 +21,12 @@ public class AuthController {
     // 로그인 ID와 비밀번호가 있는 경우 일반 로그인으로 처리
     if (authRequestDto.getLoginId() != null && authRequestDto.getPassword() != null) {
       System.out.println("=============================");
+      System.out.println(authRequestDto.getLoginId()+":아이디 " + "로그인 성공");
       AuthResponseDto response = authService.login(authRequestDto);
+      System.out.println(authRequestDto.getSocialToken()+ ":토큰 " + "로그인 성공");
+
       System.out.println("=============================");
+
       return ResponseEntity.ok(response);
     }
 

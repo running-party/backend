@@ -20,4 +20,18 @@ public class UserController {
     return ResponseEntity.ok("회원가입이 완료되었습니다.");
   }
 
+  // 회원 정보 조회 API
+  @GetMapping("/{userId}")
+  public ResponseEntity<UserDto> getUserInfo(@PathVariable Long userId) {
+    UserDto userDto = userService.getUserInfo(userId);
+
+    if (userDto != null) {
+      return ResponseEntity.ok(userDto); // 200 OK와 함께 사용자 정보 반환
+    } else {
+      return ResponseEntity.notFound().build(); // 404 Not Found 반환
+    }
+  }
+
+
+
 }
