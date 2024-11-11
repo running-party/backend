@@ -1,4 +1,4 @@
-package com.runningpartybe.global.config;
+package com.runningpartybe.global.provider;
 
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
